@@ -1,0 +1,259 @@
+@font-face {
+    font-family: Jost;
+    /* src: url('Jost/Jost-VariableFont_wght.ttf'); */
+    src: url('Jost/Jost-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Bebas;
+    /* src: url('Jost/Jost-VariableFont_wght.ttf'); */
+    src: url('Bebas_Neue/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto;
+    /* src: url('Jost/Jost-VariableFont_wght.ttf'); */
+    src: url('Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto-i;
+    /* src: url('Jost/Jost-VariableFont_wght.ttf'); */
+    src: url('Roboto_Condensed/RobotoCondensed-BoldItalic.ttf');
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(255, 232, 131);
+}
+.whole {
+    width: 100%;
+    height: 900vh;
+}
+
+.UpBar {
+    position: absolute;
+    background-color: rgb(255, 232, 131);
+    width: 100%;    
+    height: 8ch;
+    text-align: left;
+}
+
+.UpBar-logo-1 {
+    margin-left: 4%;
+    align-items: center;
+    display: flex;
+    /* margin-left: auto; */
+    margin-right: 0;
+    /* display: block; */
+    height: 100%;
+    float:left
+    
+}
+
+.logo-1 {
+    color: #242d2c;
+    text-align: left;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    /* border-left: 1px solid #242d2c;
+    margin-left: 24px;
+    padding-top: 0;
+    /* padding-bottom: 0;
+    padding-left: 16px; */
+    font-family: Bebas,sans-serif;
+    font-size: 5vh;
+    font-weight: 500;
+    line-height: 16px;
+}
+.logo-description {
+    color: #242d2c;
+    text-align: left;
+    text-transform: uppercase;
+
+    font-family: Jost,sans-serif;
+    font-size: 10px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+
+.TE_Main_Text .logo-description {
+    /* margin-top: 30%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+.Main_TE {
+    
+    margin: auto;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    width: 80%;
+    height: auto;
+    /* background-image: url('img/TE_BK2.png'); */
+    /* background-size: 100%,100%; */
+    position: relative;
+    border-radius: 20px;
+}
+
+.TE_Main_Text {
+    /* position:absolute; */
+    padding-top: 10vh;
+    text-align: center;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.TE_Main_Text_1 {
+    
+    padding: 40px;
+    /* border: 4px solid rgb(255, 192,43); */
+    border-radius: 10px;
+    font-family: Roboto-i,sans-serif;
+    font-weight: 1000px;
+    font-size : 17rem;
+    /* color: rgb(255, 208, 77); */
+    color: rgb(255, 198, 43);
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in 1s forwards;
+    text-shadow: 7px 7px rgb(174, 162, 91);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.MoreButton_Div {
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.MoreButton {
+    padding: 14px 24px;
+
+    color: black;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+    -webkit-transition: background-color .3s,-webkit-transform 50ms;
+    transition: transform 50ms,background-color .3s,-webkit-transform 50ms;
+    font-family: Roboto,sans-serif;
+    font-weight: 900px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+.Teacher_Introduce {
+    position: relative;
+}
+/* #34cfca */
+/* #F45270z */
+.container {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
