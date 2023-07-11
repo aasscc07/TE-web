@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TE STUDY</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js">
+        </script>
+
+        
+    </head>
+    <body>
+        <div class="whole">
+            <div class="UpBar">
+                <div class="UpBar-logo-1" onclick="GoMain()">
+                    <h1 class="logo-1">TE STUDY</h1>
+                </div>
+                <div style="align-items: center; display: flex; height: 100%; float:left" onclick="GoMain()">
+                    <span class="logo-description">
+                        Buldang-dong
+                        in Cheonan
+                        <br>
+                        accademy
+                    </span>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="UpBar-AB" style="width: 100%; height: 8ch;">
+
+            </div>
+
+            <div class="Main_TE">
+                <div class="TE_Main_Text">
+                    <span class="TE_Main_Text_1">
+                        TE STUDY
+                    </span>
+                </div>
+
+                
+                <div>         
+                </div>
+            </div>
+
+            
+            <!-- <div class="Teacher_Introduce">
+                <div class="container"> -->
+                    <!-- <img src="img/TE_STUDY_BACKGROUND.jpg" alt="Image 1" class="slider-image"> -->
+                    <!-- <img src="img/TE_BK.png" alt="Image 2" class="slider-image"> -->
+                    <!-- <img src="" alt="Image 3" class="slider-image"> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            
+        </div>
+        <script>
+            const sliderImages = document.querySelectorAll('.slider-image');
+            let currentImageIndex = 0;
+
+            function changeImage() {
+                sliderImages[currentImageIndex].classList.remove('active');
+                currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+                sliderImages[currentImageIndex].classList.add('active');
+            }
+
+            setInterval(changeImage, 2000);
+        </script>
+        
+    </body>
+</html>
